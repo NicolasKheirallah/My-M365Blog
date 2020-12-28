@@ -1,17 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `My M365 Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Nicolas Kheirallah`,
+      summary: `Software Engineer with focus on M365 development.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A M365 blog using Gatsby and Tailwind.`,
+    siteUrl: `http://yourmodernworkplace.com//`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Amazinjoey`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `https://yourmodernworkplace.com/`,
+        secret: `testx`,
+        basicAuth: {
+          username: process.env.BASIC_AUTH_USERNAME,
+          password: process.env.BASIC_AUTH_PASSWORD,
+        },
+
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -70,6 +82,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
