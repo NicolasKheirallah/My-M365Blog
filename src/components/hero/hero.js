@@ -3,7 +3,8 @@ import * as React from "react";
 const Hero = (props) => {
 
     return (
-        <div class="relative bg-white dark:bg-gray-800 dark:text-gray-200 overflow-hidden">
+        <div
+            class="relative bg-white dark:bg-gray-800 dark:text-gray-200 overflow-hidden mt-10">
             <div class="max-w-7xl mx-auto">
                 <div
                     class="relative z-10 pb-8 bg-white dark:bg-gray-800 dark:text-gray-200 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
