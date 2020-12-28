@@ -2,7 +2,7 @@ import * as React from "react";
 import NavigationBranding from "./navigationBranding"
 import NavigationItems from "./navigationItems"
 import NavigationSearchBar from "./navigationSearchBar"
-import Themechanger from "./themechanger"
+import Toggle from "./toggle"
 
 const NavigationBar = () => {
     return (
@@ -22,7 +22,7 @@ const NavigationBar = () => {
                     <NavigationItems title="Blog" url="/posts/"/>
                     <NavigationItems title="Contact me" url="/contact/"/>
                     <NavigationItems title="About me" url="/about/"/>
-                    <Themechanger/>
+                    <Toggle/>
                 </div>
             </div>
         </nav>
