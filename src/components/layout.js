@@ -1,6 +1,6 @@
 import React from "react"
-import NavigationBar from "./Navigation/navigationBar"
-import Footer from "./footer/Footer"
+import NavigationBar from "./navigation/navigationBar"
+import Footer from "./footer/footer"
 
 const Layout = ({location, title, children}) => {
     const rootPath = `${__PATH_PREFIX__}/`

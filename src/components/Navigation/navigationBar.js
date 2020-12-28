@@ -1,7 +1,7 @@
 import * as React from "react";
-import NavigationBranding from "./NavigationBranding"
+import NavigationBranding from "./navigationBranding"
 import NavigationItems from "./navigationItems"
-import NavigationSearchBar from "./NavigationSearchBar"
+import NavigationSearchBar from "./navigationSearchBar"
 import Themechanger from "./themechanger"
 
 const NavigationBar = () => {
