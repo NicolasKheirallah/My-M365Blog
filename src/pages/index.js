@@ -2,7 +2,7 @@ import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card/card";
+import Card from "../components/card/Card";
 import Hero from "../components/hero/Hero"
 
 const BlogIndex = ({data, location}) => {
