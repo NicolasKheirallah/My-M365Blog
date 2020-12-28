@@ -2,6 +2,8 @@ import * as React from "react";
 import NavigationBranding from "./NavigationBranding"
 import NavigationItems from "./navigationItems"
 import NavigationSearchBar from "./NavigationSearchBar"
+import Themechanger from "./themechanger"
+
 const NavigationBar = () => {
     return (
         <nav
@@ -20,6 +22,7 @@ const NavigationBar = () => {
                     <NavigationItems title="Blog" url="/posts/"/>
                     <NavigationItems title="Contact me" url="/contact/"/>
                     <NavigationItems title="About me" url="/about/"/>
+                    <Themechanger/>
                 </div>
             </div>
         </nav>

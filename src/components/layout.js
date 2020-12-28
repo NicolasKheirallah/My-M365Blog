@@ -7,7 +7,7 @@ const Layout = ({location, title, children}) => {
     const isRootPath = location.pathname === rootPath
 
     return (
-        <div class="bg-white bg-opacity-100">
+        <div class="bg-white dark:bg-black dark:text-white bg-opacity-100">
             <NavigationBar/>
                 <div>{children}</div>
                 <Footer></Footer>
