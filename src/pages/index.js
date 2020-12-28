@@ -2,8 +2,8 @@ import React from "react"
 import {graphql} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card/Card";
-import Hero from "../components/hero/Hero"
+import Card from "../components/card/card";
+import Hero from "../components/hero/hero"
 
 const BlogIndex = ({data, location}) => {
     const siteTitle = data.site.siteMetadata
