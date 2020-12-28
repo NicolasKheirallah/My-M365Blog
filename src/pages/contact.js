@@ -2,7 +2,7 @@ import React from "react"
 import {graphql} from "gatsby"
 
 import Layout from "../components/layout"
-import Contact from "../components/Contact/contact"
+import Contact from "../components/contact/contact"
 import SEO from "../components/seo"
 
 const ContactMe = ({data, location}) => {
