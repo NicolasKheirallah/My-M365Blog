@@ -39,7 +39,9 @@ const BlogIndex = ({data, location}) => {
                                     <Card
                                         title={title}
                                         date={post.frontmatter.date}
-                                        description={post.frontmatter.description}/>
+                                        description={post.frontmatter.description}
+                                        category={post.frontmatter.category}
+                                        />
                                 </div>
                             )
                         })}
@@ -69,6 +71,7 @@ export const pageQuery = graphql `
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          category
         }
       }
     }

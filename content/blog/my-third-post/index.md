@@ -1,6 +1,9 @@
 ---
 title: My third Post!
 date: "2017-05-06T23:46:37.121Z"
+description: Wow! I love blogging so much already.
+category: SharePoint
+
 ---
 
 Wow! I love blogging so much already.

@@ -8,7 +8,7 @@ module.exports = {
     description: `A M365 blog using Gatsby and Tailwind.`,
     siteUrl: `http://yourmodernworkplace.com//`,
     social: {
-      twitter: `Amazinjoey`,
+      twitter: `Chiichooz`,
     },
   },
   plugins: [
