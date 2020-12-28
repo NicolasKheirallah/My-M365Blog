@@ -4,8 +4,9 @@ import NavigationItems from "./navigationItems"
 import NavigationSearchBar from "./NavigationSearchBar"
 const NavigationBar = () => {
     return (
-        <nav class="flex items-center justify-between flex-wrap py-4 lg:px-12  border-t-2 border-blue-700">
-          <NavigationBranding title="Your Digital Workplace"/>
+        <nav
+            class="flex items-center justify-between flex-wrap py-4 lg:px-12  border-t-2 border-grey-700">
+            <NavigationBranding title="Your Digital Workplace"/>
             <button
                 class="inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
                 data-target="#navigation">

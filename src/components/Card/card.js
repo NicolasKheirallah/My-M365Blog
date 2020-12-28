@@ -1,5 +1,4 @@
 import * as React from "react";
-import Tags from "./tags"
 import Author from "./author"
 const Card = ({
     title,
@@ -7,34 +6,29 @@ const Card = ({
     date,
     author,
     description,
-    tags
+    Category
 }) => {
     return (
-        <a class="mx-auto px-4 py-8 max-w-xl my-20" href={href}>
-            <div class="bg-white shadow-2xl rounded-lg mb-6 tracking-wide">
-                <div class="md:flex-shrink-0">
-                    <img
-                        src="https://ik.imagekit.io/q5edmtudmz/post1_fOFO9VDzENE.jpg"
-                        alt="mountains"
-                        class="w-full h-64 rounded-lg rounded-b-none"/>
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-12">
+              <div class="p-12 flex flex-col items-start">
+                <span class="inline-block py-1 px-2 rounded bg-gray-50 text-gray-500 text-xs font-medium tracking-widest">{Category}</span>
+                <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">{title}</h2>
+                <p class="leading-relaxed mb-8">{description}.</p>
+                <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                  <a class="text-gray-500 inline-flex items-center">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
                 </div>
-                <div class="px-4 py-2 mt-2">
-                    <p class="font-light text-gray-600 text-xs text-right">{date}</p>
-                    <div>
-                        <h2 class="font-bold text-2xl text-gray-800 tracking-normal">{title}.</h2>
-                        {/* <span class="text-sm text-gray-700 px-2 mr-1">
-                            {description}
-                        </span> */}
-                        <div class="flex justify-between">
-                            <Author author={author}/>
-                            <Tags tags={tags}/>
-                        </div>
-                    </div>
-
-                </div>
+                <Author></Author>
+              </div>
             </div>
-
-        </a>
+          </div>
+        </section>
     )
 }
 export default Card

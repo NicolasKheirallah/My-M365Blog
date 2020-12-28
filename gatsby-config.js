@@ -16,12 +16,12 @@ module.exports = {
       resolve: `gatsby-source-drupal`,
       options: {
         baseUrl: `https://yourmodernworkplace.com/`,
-        secret: `testx`,
         basicAuth: {
           username: process.env.BASIC_AUTH_USERNAME,
           password: process.env.BASIC_AUTH_PASSWORD,
+          secret: process.env.PREVIEW_SECRET
         },
-
+        fastBuilds: true,
       },
     },
     {
