@@ -14,7 +14,7 @@ const Hero = (props) => {
                         viewBox="0 0 100 100"
                         preserveAspectRatio="none"
                         aria-hidden="true">
-                        <polygon class="bg-white dark:bg-gray-800" points="50,0 100,0 50,100 0,100"/>
+                        <polygon class="color:#ecc94b" points="50,0 100,0 50,100 0,100"/>
                     </svg>
                     <div class="relative pt-6 px-4 sm:px-6 lg:px-8"></div>
                     <div

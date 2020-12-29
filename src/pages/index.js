@@ -29,8 +29,8 @@ const BlogIndex = ({data, location}) => {
             <div class="container mx-auto">
                 <Hero/>
                 </div>
-                <div class="container flex my-12 mx-auto px-4 md:px-12">
-                    <div class="my-1 px-1 w-full grid grid-cols-3">
+                <div class="container flex my-6 mx-auto ">
+                    <div class="my-1 px-1 w-full grid grid-cols-4">
                         {posts.map(post => {
                           console.log(post.frontmatter);
                             const title = post.frontmatter.title || post.fields.slug
