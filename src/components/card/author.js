@@ -3,7 +3,7 @@ import * as React from "react";
 const Author = ({author}) => {
 
     return (
-        <a class="inline-flex items-center">
+        <div class="inline-flex items-center">
             <img
                 alt="blog"
                 src="https://dummyimage.com/104x104"
@@ -12,7 +12,7 @@ const Author = ({author}) => {
                 <span class="title-font font-medium text-gray-900 dark:text-gray-200">
                     Nicolas {author}</span>
             </span>
-        </a>
+        </div>
     )
 }
 export default Author

@@ -11,31 +11,34 @@ const Contact = () => {
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-200">Name</label>
+                                <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-200 ">Name
                                 <input
                                     type="text"
                                     id="name"
                                     name="name"
-                                    class="w-full dark:bg-white bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                    class="w-full rounded border border-gray-500 focus:border-gray-500 dark:text-gray-100 py-1 dark:bg-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                    </label>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-200">Email</label>
+                                <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-200">Email
                                 <input
                                     type="email"
                                     id="email"
                                     name="email"
-                                    class="w-full bg-gray-100  dark:bg-white bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                    class="w-full rounded border border-gray-500 focus:border-gray-500 dark:text-gray-100 py-1 dark:bg-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                          </label>
                             </div>
                         </div>
                         <div class="p-2 w-full">
                             <div class="relative">
-                                <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                                <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-200">Message
                                 <textarea
                                     id="message"
                                     name="message"
-                                    class="w-full bg-gray-100 dark:bg-white bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-gray-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                    class="w-full rounded border border-gray-500 focus:border-gray-500 outline-none dark:text-gray-100 py-1 dark:bg-gray-700 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                          </label>
                             </div>
                         </div>
                         <div class="p-2 w-full">
