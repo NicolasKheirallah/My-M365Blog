@@ -29,7 +29,7 @@ const BlogIndex = ({data, location}) => {
             <div class="container mx-auto">
                 <Hero/>
                 </div>
-                <div class="container flex my-6 mx-auto ">
+                <div class="container flex mx-auto ">
                     <div class="my-1 px-1 w-full grid grid-cols-4">
                         {posts.map(post => {
                           console.log(post.frontmatter);
