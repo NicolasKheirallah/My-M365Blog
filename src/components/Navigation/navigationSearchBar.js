@@ -3,7 +3,7 @@ import * as React from "react";
 const NavigationSearchBar = (props) => {
 
     return (
-        <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+        <div class="relative lg:w-64 md:w-40 lg:mr-4 md:mr-2">
             <input
                 type="search"
                 id="search-field"

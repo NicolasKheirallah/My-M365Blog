@@ -34,6 +34,8 @@ const BlogIndex = ({data, location}) => {
                         {posts.map(post => {
                           console.log(post.frontmatter);
                             const title = post.frontmatter.title || post.fields.slug
+                            const slug = post.fields.slug
+                            console.log(slug)
                             return (
                                 <div>
                                     <Card
@@ -41,6 +43,7 @@ const BlogIndex = ({data, location}) => {
                                         date={post.frontmatter.date}
                                         description={post.frontmatter.description}
                                         category={post.frontmatter.category}
+                                        href={slug}
                                         />
                                 </div>
                             )

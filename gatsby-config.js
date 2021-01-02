@@ -81,6 +81,12 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    {
+    resolve: 'gatsby-plugin-netlify-cms',
+    options: {
+      modulePath: `${__dirname}/src/cms/cms.js`,
+    },
+  },
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-postcss',
     // this (optional) plugin enables Progressive Web App + Offline functionality

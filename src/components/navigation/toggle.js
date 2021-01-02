@@ -5,7 +5,7 @@ const Toggle = () => {
     const {theme, setTheme} = React.useContext(ThemeContext);
 
     return (
-        <div class="transition duration-500 ease-in-out rounded-full w-1">
+        <div class="lg:ml-auto transition duration-500 ease-in-out rounded-full w-1">
             {theme === 'dark'
                 ? (
 
@@ -15,7 +15,7 @@ const Toggle = () => {
                         : 'dark')}
                         class="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer w-1">
                         <svg
-                            className="w-4 h-4 md:w-5 md:h-5"
+                            className="w-8 h-8 md:w-10 md:h-10"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ const Toggle = () => {
                         : 'dark')}
                         class="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer w-1">
                         <svg
-                            className="w-4 h-4 md:w-5 md:h-5"
+                            className="w-8 h-8 md:w-10 md:h-10"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
