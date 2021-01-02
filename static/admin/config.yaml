@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: amazinjoey/My-M365Blog
+  branch: main
 
 media_folder: content/assets
 public_folder: ../assets
