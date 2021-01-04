@@ -5,7 +5,7 @@ import Card from "../components/card/card";
 
 const Posts = props => {
     const {data} = props
-    const allPosts = data.allMarkdownRemark.edges
+    const allPosts = data.allMdx.edges
     const emptyQuery = ""
     const [state,
         setState] = useState({filteredData: [], query: emptyQuery})
@@ -13,7 +13,7 @@ const Posts = props => {
     const handleInputChange = event => {
         const query = event.target.value
         const {data} = props
-        const posts = data.allMarkdownRemark.edges || []
+        const posts = data.allMdx.edges || []
         const filteredData = posts.filter(post => {
             const {title, description, category} = post.node.frontmatter
             console.log(category)
@@ -57,7 +57,7 @@ const Posts = props => {
 export default Posts
 export const pageQuery = graphql `
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       edges {
         node {
           excerpt(pruneLength: 200)
