@@ -12,18 +12,6 @@ module.exports = {
     },
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-drupal`,
-    //   options: {
-    //     baseUrl: `https://yourmodernworkplace.com/`,
-    //     basicAuth: {
-    //       username: process.env.BASIC_AUTH_USERNAME,
-    //       password: process.env.BASIC_AUTH_PASSWORD,
-    //       secret: process.env.PREVIEW_SECRET
-    //     },
-    //     fastBuilds: true,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -72,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `My M365 Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,

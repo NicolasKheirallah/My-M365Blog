@@ -22,7 +22,7 @@ module.exports = {
                 dark: {
                     css: {
                         pre: {
-                            color: theme("colors.grey.200"),
+                            color: theme("colors.grey.100"),
                             backgroundColor: theme("colors.grey.1000")
                           },
                           "pre code::before": {

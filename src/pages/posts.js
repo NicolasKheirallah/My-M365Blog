@@ -44,8 +44,13 @@ const Posts = props => {
 
                         {posts.map(({node}) => {
                             const {title, date, description, category} = node.frontmatter
-                            const { slug } = node.fields
-                            return (<Card title={title} date={date} description={description} category={category} href={slug}/>)
+                            const {slug} = node.fields
+                            return (<Card
+                                title={title}
+                                date={date}
+                                description={description}
+                                category={category}
+                                href={slug}/>)
                         })}
                     </div>
                 </div>
