@@ -7,6 +7,8 @@
 ⚡️ Modern UI Design\
 ⚡️ Built with React\
 ⚡️ Build using Tailwind v2\
+⚡️ MDX support\
+⚡️ Netlify CMS\
 ⚡️ Fully Responsive\
 ⚡️ Image optimization with Gatsby\
 ⚡️ Easy site customization\

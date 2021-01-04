@@ -25,7 +25,6 @@
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-remark-copy-linked-files": "^2.7.0",
     "gatsby-remark-images": "^3.8.1",
-    "gatsby-remark-prismjs": "^3.10.0",
     "gatsby-remark-responsive-iframe": "^2.8.0",
     "gatsby-remark-smartypants": "^2.7.0",
     "gatsby-source-drupal": "^3.10.1",

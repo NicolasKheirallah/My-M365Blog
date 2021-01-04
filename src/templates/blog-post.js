@@ -15,10 +15,10 @@ const BlogPostTemplate = ({data, location}) => {
             <SEO
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}/>
-            <div class="flex">
-                <article class="blog-post pr-20 pl-20 pb-20 text-l">
+            <div class="flex justify-center">
+                <article class="prose dark:prose-dark max-w-none blog-post pb-20 w-2/3 ">
                     <header class="text-center">
-                        <h1 class="text-4xl dark:text-gray-200 pb-2" itemProp="headline">{post.frontmatter.title}</h1>
+                        <h1 class="dark:text-gray-200 pb-2" itemProp="headline">{post.frontmatter.title}</h1>
                         <p class="dark:text-gray-200 pb-10">{post.frontmatter.date}</p>
                     </header>
                     <MDXRenderer>{post.body}</MDXRenderer>
