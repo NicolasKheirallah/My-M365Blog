@@ -5,7 +5,7 @@ const Toggle = () => {
     const {theme, setTheme} = React.useContext(ThemeContext);
 
     return (
-        <div class="lg:ml-auto transition duration-500 ease-in-out rounded-full w-1">
+        <div class="lg:ml-auto transition duration-500 ease-in-out rounded-full w-auto">
             {theme === 'dark'
                 ? (
 

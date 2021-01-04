@@ -7,22 +7,25 @@ import Toggle from "./toggle"
 const NavigationBar = () => {
     return (
         <nav
-            class="flex items-center justify-between flex-wrap py-4 md:px-12  border-t-2 border-grey-700">
+            class="flex flex-wrap items-center py-4 md:px-10 border-grey-700 ml-3 md:ml-3">
             <NavigationBranding title="Your Digital Workplace"/>
             <div
-                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
-                <div
-                    class="md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start flex flex-col md:h-auto">
-                                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <NavigationItems title="Blog" url="/posts/"/>
-                    <NavigationItems title="Contact" url="/contact/"/>
-                    <NavigationItems title="About" url="/about/"/>
+                class="md:mr-auto md:py-1 md:pl-4 md:border-l md:border-gray-700 justify-center flex flex-nowrap">
+                <div class="w-auto md:items-center items-start">
+                    <nav class="flex flex-wrap justify-center">
+                        <NavigationItems title="Blog" url="/posts/"/>
+                        <NavigationItems title="Contact" url="/contact/"/>
+                        <NavigationItems title="About" url="/about/"/>
                     </nav>
                 </div>
             </div>
-            <div class="sm:ml-auto flex flex-wrap items-center text-base justify-center">
-                <NavigationSearchBar/>
-                <Toggle/>
+            <div class="flex flex-wrap items-center justify-center">
+                <div class="sm:ml-3">
+                    <NavigationSearchBar/>
+                </div>
+                <div class="ml-3 md:ml-3">
+                    <Toggle/>
+                </div>
             </div>
         </nav>
     )
