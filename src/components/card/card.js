@@ -12,6 +12,7 @@ const Card = ({
         <section class="flex text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex-wrap -m-12">
+                    <a href={href}>
                     <div class="p-12 flex-col items-start w-full lg:w-full overflow-ellipsis overflow-hidden">
                         <span
                             class="inline-block py-1 px-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-medium tracking-widest">{category}</span>
@@ -45,6 +46,7 @@ const Card = ({
                             </p>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
         </section>
