@@ -1,0 +1,16 @@
+{
+    "title": "Welcome to my M365 blog",
+    "description": "A M365 blog using Gatsby and Tailwind.",
+    "siteUrl": "http://yourmodernworkplace.com/",
+    "author": {
+      "name": "Nicolas Kheirallah",
+      "summary": "Software Engineer with focus on M365 development."
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/nicholas.kheirallah",
+      "twitter": "https://twitter.com/chiichooz",
+      "linkedin": "https://www.linkedin.com/in/nicolas-kheirallah-39717690",
+      "instagram": "https://www.instagram.com/chiichooz/",
+      "github": "https://github.com/amazinjoey"
+    }
+  }

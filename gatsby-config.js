@@ -1,16 +1,5 @@
 module.exports = {
-  siteMetadata: {
-    title: `My M365 Blog`,
-    author: {
-      name: `Nicolas Kheirallah`,
-      summary: `Software Engineer with focus on M365 development.`,
-    },
-    description: `A M365 blog using Gatsby and Tailwind.`,
-    siteUrl: `http://yourmodernworkplace.com//`,
-    social: {
-      twitter: `Chiichooz`,
-    },
-  },
+  siteMetadata: require("./sitemetadata.json"),
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

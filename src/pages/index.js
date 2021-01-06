@@ -6,6 +6,7 @@ import Card from "../components/card/card";
 import Hero from "../components/hero/hero"
 
 const BlogIndex = ({data, location}) => {
+  console.log(data.site.siteMetadata);
     const siteTitle = data.site.siteMetadata
         ?.title || `Title`
     const posts = data.allMdx.nodes
@@ -27,15 +28,13 @@ const BlogIndex = ({data, location}) => {
             <SEO title="All posts"/>
             <div>
             <div class="container mx-auto">
-                <Hero/>
+                <Hero title={siteTitle} description={data.site.siteMetadata.description} />
                 </div>
                 <div class="container flex mx-auto ">
                     <div class="my-1 px-1 w-full grid grid-cols-4">
                         {posts.map(post => {
-                          console.log(post.frontmatter);
                             const title = post.frontmatter.title || post.fields.slug
                             const slug = post.fields.slug
-                            console.log(slug)
                             return (
                                 <div>
                                     <Card
@@ -62,6 +61,7 @@ export const pageQuery = graphql `
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

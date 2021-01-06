@@ -3,7 +3,6 @@ import {graphql} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Social from "../components/social/social"
 
 const AboutMe = ({data, location}) => {
     const siteTitle = data.site.siteMetadata.title
@@ -13,12 +12,13 @@ const AboutMe = ({data, location}) => {
             <SEO title="About Me"/>
             <div class="flex justify-center p-20 mx-auto">
                 <div class="container inline-flex w-full rounded-lg shadow-2xl bg-gray-50">
-                    <div class="flex justify-start w-1/2 shrink-0">
+                    <div class="flex justify-start w-2/5 shrink-0">
                         <img
                             class="rounded-tl-md rounded-bl-md object-cover w-full"
+                            alt="randomDude"
                             src="https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743_960_720.jpg"></img>
                     </div>
-                    <div class="w-1/2 p-10  text-center sm:text-left dark:text-gray-900">
+                    <div class="w-3/5 p-10  text-center sm:text-left dark:text-gray-900">
                         <p class="text-4xl text-center pb-5">Wanna get to know me?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris
                             eleifend, ultrices nulla cursus, rutrum nisi. Donec semper quam nunc.
@@ -30,13 +30,6 @@ const AboutMe = ({data, location}) => {
                             eleifend bibendum vehicula. Nam suscipit vel risus id semper.
                         </p>
                     </div>
-                    <div class="relative ...">
-                        <div class="absolute bottom-0 right-0 p-10">
-                            <Social/>
-
-                        </div>
-                        </div>
-
                 </div>
             </div>
         </Layout>
