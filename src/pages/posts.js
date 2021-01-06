@@ -31,7 +31,7 @@ const Posts = props => {
             <section class="bg-indigo-dark p-8">
                 <div class="container mx-auto py-8">
                     <input
-                        class="w-full h-16 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-lg focus:border-gray-500 outline-none dark:text-gray-100 py-1 dark:bg-gray-700"
+                        class="w-full h-16 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-md focus:ring-2 focus:shadow-2xl focus:border-gray-500 outline-none dark:text-gray-100 py-1 dark:bg-gray-700"
                         type="text"
                         aria-label="Search"
                         placeholder="Search something like Powerapps..."

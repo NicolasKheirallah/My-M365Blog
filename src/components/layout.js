@@ -8,10 +8,8 @@ const Layout = ({children}) => {
         <ThemeProvider>
             <div
                 class="flex flex-col bg-white dark:bg-gray-800 dark:text-white bg-opacity-100 min-h-screen">
-                <div>
-                    <NavigationBar/>
-                    <div>{children}</div>
-                </div>
+                <NavigationBar/>
+                <div>{children}</div>
             </div>
             <div class="bottom-0 bg-white dark:bg-gray-800 dark:text-white bg-opacity-100 ">
                 <Footer class="bottom-0"></Footer>
