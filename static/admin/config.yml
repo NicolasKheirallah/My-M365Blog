@@ -10,6 +10,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
+    extension: markdown
     create: true
     fields:
       - { name: path, label: Path }
