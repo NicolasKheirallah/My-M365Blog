@@ -29,7 +29,6 @@ const Posts = props => {
         setState({query, filteredData})
     }
 
-
     const {filteredData} = state
     const hasSearchResults = filteredData
     const posts = hasSearchResults
@@ -43,13 +42,15 @@ const Posts = props => {
                 <div class="container mx-auto py-8">
                     {categories.map((category, index) => {
                         return (
-                            <button
-                                type="button"
-                                key={index}
-                                class="dark:text-white  py-2 px-4 border dark:border-gray-500 rounded border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700"
-                                onClick={handleInputChange}>
-                                {category}
-                            </button>
+                            <div class="inline-flex p-2">
+                                <button
+                                    type="button"
+                                    key={index}
+                                    class="dark:text-white  py-2 px-4 border dark:border-gray-500 rounded border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700"
+                                    onClick={handleInputChange}>
+                                    {category}
+                                </button>
+                            </div>
                         )
                     })}
                 </div>

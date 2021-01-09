@@ -14,6 +14,7 @@ const NavigationBar = () => {
                 <div class="w-auto md:items-center items-start">
                     <nav class="flex flex-wrap justify-center">
                         <NavigationItems title="Blog" url="/posts/"/>
+                        <NavigationItems title="Tags" url="/tags/"/>
                         <NavigationItems title="Contact" url="/contact/"/>
                         <NavigationItems title="About" url="/about/"/>
                     </nav>
