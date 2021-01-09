@@ -54,7 +54,7 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql `
   query BlogPostBySlug(
-    $id: String!
+    $id: String
     $previousPostId: String
     $nextPostId: String
   ) {
