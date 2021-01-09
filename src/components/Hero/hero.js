@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import heroImage from '../../../content/assets/hero-image.jpeg'
 const Hero = (props) => {
 
     return (
@@ -40,7 +40,7 @@ const Hero = (props) => {
             <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <img
                     class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://images.pexels.com/photos/4916238/pexels-photo-4916238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    src={heroImage}
                     alt=""/>
             </div>
         </div>

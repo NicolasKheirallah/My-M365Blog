@@ -1,5 +1,6 @@
 import React from "react"
 import {graphql} from "gatsby"
+import profileImage from '../../content/assets/profile-pic.jpg'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,8 +16,8 @@ const AboutMe = ({data, location}) => {
                     <div class="flex justify-start w-2/5 shrink-0">
                         <img
                             class="rounded-tl-md rounded-bl-md object-cover w-full"
-                            alt="randomDude"
-                            src="https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743_960_720.jpg"></img>
+                            alt="oldimg"
+                            src={profileImage}></img>
                     </div>
                     <div class="w-3/5 p-10  text-center sm:text-left dark:text-gray-900">
                         <p class="text-4xl text-center pb-5">Wanna get to know me?</p>

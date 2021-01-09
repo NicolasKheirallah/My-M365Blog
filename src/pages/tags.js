@@ -6,35 +6,52 @@ import Card from "../components/card/card";
 const Posts = props => {
     const {data} = props
     const allPosts = data.allMdx.edges
-    const emptyQuery = ""
     const [state,
-        setState] = useState({filteredData: [], query: emptyQuery})
+        setState] = useState({filteredData: "", items: data.allMdx.edges})
 
+    const getCategories = items => {
+        const categoryItems = items.map(item => {
+            return item.node.frontmatter.category
+        })
+        const uniqueCategories = new Set(categoryItems)
+        const categories = Array.from(uniqueCategories)
+        return categories
+    }
     const handleInputChange = event => {
-        const query = event.target.value
+        const query = event.target.textContent
+        console.log(query);
         const {data} = props
         const posts = data.allMdx.edges || []
         const filteredData = posts.filter(post => {
-            const {title, description, category} = post.node.frontmatter
-            return (description.toLowerCase().includes(query.toLowerCase()) || title.toLowerCase().includes(query.toLowerCase()) || category.toLowerCase().includes(query.toLowerCase()))
+            const {category} = post.node.frontmatter
+            return (category.toLowerCase().includes(query.toLowerCase()))
         })
         setState({query, filteredData})
     }
-    const {filteredData, query} = state
-    const hasSearchResults = filteredData && query !== emptyQuery
+
+
+    const {filteredData} = state
+    const hasSearchResults = filteredData
     const posts = hasSearchResults
         ? filteredData
         : allPosts
+    const categories = getCategories(props.data.allMdx.edges)
+
     return (
         <Layout>
             <section class="bg-indigo-dark p-8">
                 <div class="container mx-auto py-8">
-                    <input
-                        class="w-full h-16 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-md focus:ring-2 focus:shadow-2xl focus:border-gray-500 outline-none dark:text-gray-100 py-1 dark:bg-gray-700"
-                        type="text"
-                        aria-label="Search"
-                        placeholder="Search something like Powerapps..."
-                        onChange={handleInputChange}/>
+                    {categories.map((category, index) => {
+                        return (
+                            <button
+                                type="button"
+                                key={index}
+                                class="dark:text-white  py-2 px-4 border dark:border-gray-500 rounded border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700"
+                                onClick={handleInputChange}>
+                                {category}
+                            </button>
+                        )
+                    })}
                 </div>
             </section>
             <section class="bg-indigo-dark p-8">
