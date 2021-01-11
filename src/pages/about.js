@@ -21,14 +21,11 @@ const AboutMe = ({data, location}) => {
                     </div>
                     <div class="w-3/5 p-10  text-center sm:text-left dark:text-gray-900">
                         <p class="text-4xl text-center pb-5">Wanna get to know me?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris
-                            eleifend, ultrices nulla cursus, rutrum nisi. Donec semper quam nunc.
-                            Suspendisse congue felis nibh, facilisis convallis arcu ultricies eget. Aliquam
-                            erat volutpat. Maecenas placerat dui varius nibh iaculis aliquet. In a nulla
-                            aliquam tellus condimentum consequat. Donec neque mauris, dignissim ac vehicula
-                            vitae, faucibus eu nulla. Suspendisse sapien massa, pharetra in dictum at,
-                            sollicitudin id enim. Nunc porttitor velit sollicitudin venenatis finibus. Ut
-                            eleifend bibendum vehicula. Nam suscipit vel risus id semper.
+                        <p>Hi!
+                          My name is Nicolas and I live in one of the most awesome cities in the world: Gothenburg, Sweden. 
+                          I'm currently working as a Consultant at CGI with focus on M365 and Digital workplace. I do everything from development and solution architect
+                          to project mangement etc. :) 
+                          If you have questions just hit me up :)
                         </p>
                     </div>
                 </div>
