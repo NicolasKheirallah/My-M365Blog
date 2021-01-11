@@ -14,6 +14,8 @@ module.exports = {
                 name: `assets`
             }
         }, {
+            resolve: "gatsby-plugin-netlify-cache"
+        }, {
             resolve: `gatsby-plugin-mdx`,
             options: {
                 extensions: [
