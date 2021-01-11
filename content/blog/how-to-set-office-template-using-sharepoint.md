@@ -1,5 +1,4 @@
 ---
-path: Blog
 date: 2021-01-11T07:20:18.207Z
 title: How to set Office template using SharePoint
 description: Set and manage your organization default template
@@ -89,3 +88,6 @@ Set-SPOOrgAssetsLibrary -LibraryUrl  $imgUrl -CdnType Private -OrgAssetType Imag
 
 
 And we are done :D
+
+Source:
+https://docs.microsoft.com/en-us/sharepoint/organization-assets-library
