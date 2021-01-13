@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {graphql} from "gatsby"
 import Layout from "../components/layout";
 import Card from "../components/card/card";
+import SEO from "../components/seo"
 
 const Posts = props => {
     const {data} = props
@@ -38,6 +39,7 @@ const Posts = props => {
 
     return (
         <Layout>
+            <SEO title="Tags"/>
             <section class="bg-indigo-dark p-8">
                 <div class="container mx-auto py-8">
                     {categories.map((category, index) => {

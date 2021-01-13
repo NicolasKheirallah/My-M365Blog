@@ -10,7 +10,7 @@ const ContactMe = ({data, location}) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title="Contact Me"/>
+            <SEO title="Contact"/>
             <Contact/>
         </Layout>
     )

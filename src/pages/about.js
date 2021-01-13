@@ -10,7 +10,7 @@ const AboutMe = ({data, location}) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title="About Me"/>
+            <SEO title="About"/>
             <div class="flex justify-center p-20 mx-auto">
                 <div class="container inline-flex w-full rounded-lg shadow-2xl bg-gray-50">
                     <div class="flex justify-start w-2/5 shrink-0">
