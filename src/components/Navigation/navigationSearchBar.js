@@ -54,7 +54,7 @@ const NavigationSearchBar = () => {
             <div class="navSearchResults flex py-5 justify-between absolute z-40 pr-5">
                   <div class="overflow-hidden bg-white rounded-lg shadow-lg">
       {posts.map(({node}) => {
-                            const {title, date, description, category} = node.frontmatter
+                            const {title, date, description} = node.frontmatter
                             const {slug} = node.fields
                             return (
                               <a class="block group hover:bg-blue p-4 border-b hover:bg-gray-400" href={slug}>
