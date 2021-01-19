@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Card from "../components/card/card";
 import SEO from "../components/seo"
 
-const Posts = props => {
+const Tags = props => {
     const {data} = props
     const allPosts = data.allMdx.edges
     const [state,
@@ -36,6 +36,7 @@ const Posts = props => {
         ? filteredData
         : allPosts
     const categories = getCategories(props.data.allMdx.edges)
+    console.log(posts);
 
     return (
         <Layout>
@@ -78,7 +79,7 @@ const Posts = props => {
     )
 }
 
-export default Posts
+export default Tags
 export const pageQuery = graphql `
   query {
     allMdx(sort: { order: DESC, fields: frontmatter___date }) {
