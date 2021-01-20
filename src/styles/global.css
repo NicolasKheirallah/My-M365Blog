@@ -13,6 +13,13 @@
     --color-text-secondary: #4a5568;
     --color-text-accent: #2b6cb0;
   }
+  .navSearchResults {
+    display: none;
+  }
+  
+  .navSearch:focus-within .navSearchResults {
+    display: block;
+  }
   
   @import '../../node_modules/tailwindcss/base.css';
   @import '../../node_modules/tailwindcss/components.css';

@@ -28,7 +28,7 @@ const Posts = props => {
         : allPosts
     return (
         <Layout>
-          <SEO title="posts"/>
+            <SEO title="posts"/>
             <section class="bg-indigo-dark p-8">
                 <div class="container mx-auto py-8">
                     <input

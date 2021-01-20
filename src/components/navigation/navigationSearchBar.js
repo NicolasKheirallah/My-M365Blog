@@ -51,21 +51,23 @@ const NavigationSearchBar = () => {
                 placeholder="Search"
                 onChange={handleInputChange}
                 class="dark:bg-gray-700 bg-opacity-40 rounded-lg border border-gray-700 focus:ring-2 focus:shadow-lg text-base outline-none text-gray-100 py-1 px-3 transition-colors duration-200 ease-in-out"/>
-            <div class="navSearchResults flex py-5 justify-between absolute z-40 pr-5">
-                  <div class="overflow-hidden bg-white rounded-lg shadow-lg">
-      {posts.map(({node}) => {
-                            const {title, date, description} = node.frontmatter
-                            const {slug} = node.fields
-                            return (
-                              <a class="block group hover:bg-blue p-4 border-b hover:bg-gray-400" href={slug}>
+            <div class="navSearchResults py-5 justify-between absolute z-40 pr-5">
+                <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                    {posts.map(({node}) => {
+                        const {title, date, description} = node.frontmatter
+                        const {slug} = node.fields
+                        return (
+                            <a
+                                class="focus:border-red-300 border block group hover:bg-blue p-4 border-b hover:bg-gray-400"
+                                href={slug}>
                                 <p class="font-bold text-md text-black ">{title}</p>
                                 <p class="text-sm text-black">{description}</p>
                                 <p class="text-xs right-0 text-black">{date}</p>
-                                </a>
-                            )
-                        })}
+                            </a>
+                        )
+                    })}
                 </div>
-      </div>
+            </div>
         </div>
     )
 
