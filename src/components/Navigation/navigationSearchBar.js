@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from 'gatsby'
 
 const NavigationSearchBar = () => {
     const data = useStaticQuery(graphql `
-          query pageQuery {
+          query searchQuery {
             allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       edges {
         node {
