@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 import Card from "../components/card/card";
 import Hero from "../components/hero/hero"
 
+
 const BlogIndex = ({data, location}) => {
-  console.log(data.site.siteMetadata);
     const siteTitle = data.site.siteMetadata
         ?.title || `Title`
     const posts = data.allMdx.nodes

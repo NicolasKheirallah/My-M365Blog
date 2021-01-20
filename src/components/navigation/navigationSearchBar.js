@@ -2,27 +2,27 @@ import React, {useState} from "react";
 import {useStaticQuery, graphql} from 'gatsby'
 
 const NavigationSearchBar = () => {
-    const data = useStaticQuery(graphql `
-          query searchQuery {
-            allMdx(sort: { order: DESC, fields: frontmatter___date }) {
-      edges {
-        node {
-          excerpt(pruneLength: 200)
-          id
-          frontmatter {
-            title
-            description
-            date(formatString: "DD MMMM YYYY")
-            category
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-    }
-    `)
+  const data = useStaticQuery(graphql `
+         query searchBarQuery {
+           allMdx(sort: { order: DESC, fields: frontmatter___date }) {
+             edges {
+               node {
+                 excerpt(pruneLength: 200)
+                 id
+                 frontmatter {
+                   title
+                   description
+                   date(formatString: "DD MMMM YYYY")
+                   category
+                   }
+                   fields {
+                     slug
+                     }
+                   }
+                 }
+               }
+             }
+   `)
     const allPosts = data.allMdx.edges
     const emptyQuery = ""
     const [state,
