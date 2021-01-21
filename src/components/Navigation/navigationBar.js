@@ -3,7 +3,7 @@ import NavigationBranding from "./navigationBranding"
 import NavigationItems from "./navigationItems"
 import NavigationSearchBar from "./navigationSearchBar"
 import Toggle from "./toggle"
-
+ 
 const NavigationBar = () => {
     return (
         <nav
