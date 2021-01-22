@@ -20,9 +20,8 @@ To view a live example, **[click here](http://yourmodernworkplace.com/)**
 
 * More responsive design
 * Clean up the code.
-* Auto suggestion Search results.
 * Add a comment system.
-* Syntax for code in typograph
+* Syntax for code in typograph.
 
 
 ## Technologies used 🛠️
