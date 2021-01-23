@@ -1,8 +1,7 @@
 
 import * as React from "react";
-
 const Author = ({author}) => {
-
+    
     return (
         <div class="flex items-center">
             <img
