@@ -1,6 +1,6 @@
 ---
 date: 2021-01-11T20:54:01.975Z
-title: How to upgrade to PowerShell 7 and PnP Powershell (Nightly)
+title: How to upgrade to PowerShell 7 and PnP Powershell
 description: A guide on how to upgrade till PowerShell 7
 category: PowerShell
 ---
