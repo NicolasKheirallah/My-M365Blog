@@ -6,10 +6,10 @@ import Toggle from "./toggle"
 
 const NavigationBar = () => {
   return (
-    <nav class="flex flex-wrap items-center py-4 md:px-10 border-grey-700 ml-3 md:ml-3">
+    <nav class="flex flex-wrap items-center py-4 sm:px-10 border-grey-700 ml-3">
       <NavigationBranding title="Your Digital Workplace" />
-      <div class="md:mr-auto md:py-1 md:pl-4 md:border-l md:border-gray-700 justify-center flex flex-nowrap">
-        <div class="w-auto md:items-center items-start">
+      <div class="mx-auto sm:mr-auto sm:py-1 sm:pl-4 md:border-l md:border-gray-700 justify-center flex flex-nowrap sm:ml-2">
+        <div class="items-center items-start">
           <nav class="flex flex-wrap justify-center">
             <NavigationItems title="Blog" url="/posts/" />
             <NavigationItems title="Tags" url="/tags/" />
