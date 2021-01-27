@@ -54,8 +54,8 @@ const NavigationSearchBar = () => {
         class="dark:bg-gray-700 bg-opacity-40 rounded-lg border border-gray-700 focus:ring-2 focus:shadow-lg text-base outline-none text-gray-100 py-1 px-3 transition-colors duration-200 ease-in-out"
       />
       <div class="navSearchResults py-5 justify-between absolute z-40 pr-5">
-        <div class="overflow-hidden bg-white rounded-lg shadow-lg" >
-          {posts.map(({node}) => {
+        <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+          {posts.map(({ node }) => {
             const { title, date, description } = node.frontmatter
             const { slug } = node.fields
             return (

@@ -9,7 +9,7 @@ const NavigationBar = () => {
     <nav class="flex flex-wrap items-center py-4 sm:px-10 border-grey-700 ml-3">
       <NavigationBranding title="Your Digital Workplace" />
       <div class="mx-auto sm:mr-auto sm:py-1 sm:pl-4 md:border-l md:border-gray-700 justify-center flex flex-nowrap sm:ml-2">
-        <div class="items-center items-start">
+        <div class="items-center">
           <nav class="flex flex-wrap justify-center">
             <NavigationItems title="Blog" url="/posts/" />
             <NavigationItems title="Tags" url="/tags/" />
